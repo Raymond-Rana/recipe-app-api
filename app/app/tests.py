@@ -6,6 +6,7 @@ from django.test import SimpleTestCase
 from app import cal
 
 class CalTest(SimpleTestCase):
+    
     """Test the cal module."""
     def test_add_numbers(self):
         res = cal.add(5,6)
