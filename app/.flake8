@@ -5,3 +5,4 @@ exclude =
     __pycache__,
     manage.py,
     settings.py
+process.env.PATH = ['/usr/local/bin/', process.env.PATH].join(':')
