@@ -11,9 +11,9 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    """Django command to wait for database."""# noqa: W293
-    def handle(self,*args,**options):
-        """Entrypoint for command."""# noqa: W293      
+    """Django command to wait for database."""  # noqa: W293
+    def handle(self, *args, **options):
+        """Entrypoint for command."""  # noqa: W293
         self.stdout.write('Waiting for database...')
         db_up = False
         while db_up is False:
@@ -25,4 +25,3 @@ class Command(BaseCommand):
                 time.sleep(1)
 
         self.stdout.write(self.style.SUCCESS('Database available!'))
-        
